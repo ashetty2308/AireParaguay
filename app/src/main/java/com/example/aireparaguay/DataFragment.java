@@ -43,7 +43,7 @@ public class DataFragment extends Fragment {
         protected Void doInBackground(Void... voids) {
 
             try{
-                URL url = new URL("https://aireparaguay.org/getaqi");
+                URL url = new URL("https://aireparaguay.org/nodos_app");
                 URLConnection urlConnection = url.openConnection();
                 InputStream inputStream = urlConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
