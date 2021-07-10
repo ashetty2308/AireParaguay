@@ -5,4 +5,8 @@
 - Created a splash screen for the app
 - Created a navigation bar for users to use when going to different sections of the app
 - Obtained API data that is needed for the core functions of the app (location, sensor code, aqi value, date, color, text, latitude, longitude)  
-
+## July 9th, 2021
+- Looked into Google Maps API for map implementation
+## July 10th, 2021
+- Completed home page (introduction to what AireParaguay is and an introduction to the sensor process) 
+- Added hyperlinks 
