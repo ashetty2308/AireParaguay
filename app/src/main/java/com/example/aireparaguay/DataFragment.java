@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataFragment extends Fragment {
     @Nullable
@@ -42,6 +44,8 @@ public class DataFragment extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
 
+
+
             try{
                 URL url = new URL("https://aireparaguay.org/nodos_app");
                 URLConnection urlConnection = url.openConnection();
@@ -57,7 +61,6 @@ public class DataFragment extends Fragment {
                 e.printStackTrace();
             }
 
-            Log.d("Api length", String.valueOf(apiData.length()));
 
             ArrayList<String> regionNameList = new ArrayList<>();
             ArrayList<String> sensorCodeList = new ArrayList<>();

@@ -15,7 +15,7 @@
     </style>
 
 
-    <style name="splashscreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="splashtheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_logo</item>
     </style>
 

@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.home_tab:
                     chosen = new HomeFragment();
                     break;
+                case R.id.learn_epa_tab:
+                    chosen = new LearnEPAFragment();
+                    break;
                 case R.id.data_tab:
                     chosen = new DataFragment();
                     break;

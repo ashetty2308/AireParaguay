@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AireParaguay</string>
+    <string name="air_quality_index">Air Quality Index</string>
+
+    <string name="hyperlink">Air Quality and Health: <a href="https://www.who.int/es/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health">Air Quality and Health</a></string>
+    <string name="hyperlink2">Air Pollution: <a href="https://www.who.int/health-topics/air-pollution#tab=tab_1">Air Pollution</a></string>
+    <string name="hyperlink3">Twitter: <a href="https://twitter.com/">Twitter</a></string>
+    <string name="hyperlink4">AireParaguay Twitter: <a href="https://twitter.com/aireparaguay">Our Twitter</a></string>
+    <string name="hyperlink5">Form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSemZSWO9EgKam1lUqG5bvIpzOn5pPj9OXx02SeDfD9dBYO1qA/viewform">Form</a></string>
+
 </resources>
