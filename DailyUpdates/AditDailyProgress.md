@@ -7,3 +7,5 @@
 - Obtained API data that is needed for the core functions of the app (location, sensor code, aqi value, date, color, text, latitude, longitude)  
 ## July 9th, 2021
 - Looked into Google Maps API for map implementation
+## July 10th, 2021
+- Added home page text (almost done, just need to add hyperlinks) 
