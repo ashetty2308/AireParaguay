@@ -12,7 +12,7 @@
     <item
         android:id="@+id/data_tab"
         android:icon="@drawable/ic_baseline_table_rows_24"
-        android:title="Data" />
+        android:title="Latest Data" />
 
     <item
         android:id="@+id/map_tab"
