@@ -29,6 +29,7 @@ public class HomeFragment extends Fragment {
     TextView airPollution;
     TextView twitter;
     TextView aireParaguayTwitter;
+    TextView formTV;
 
     @SuppressLint("SetTextI18n")
     @Nullable
@@ -48,6 +49,7 @@ public class HomeFragment extends Fragment {
         airPollution = (TextView) getActivity().findViewById(R.id.pollution);
         twitter = (TextView) getActivity().findViewById(R.id.twitter);
         aireParaguayTwitter = (TextView) getActivity().findViewById(R.id.apTwitter);
+        formTV = (TextView) getActivity().findViewById(R.id.form);
 
 
         //add hyperlinks
@@ -69,6 +71,7 @@ public class HomeFragment extends Fragment {
         airPollution.setMovementMethod(LinkMovementMethod.getInstance());
         twitter.setMovementMethod(LinkMovementMethod.getInstance());
         aireParaguayTwitter.setMovementMethod(LinkMovementMethod.getInstance());
+        formTV.setMovementMethod(LinkMovementMethod.getInstance());
 
         super.onViewCreated(view, savedInstanceState);
 
