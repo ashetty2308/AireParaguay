@@ -33,11 +33,7 @@ public class LearnEPAFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
 
-        ListView listView;
         RecyclerView recyclerView;
-
-
-        ArrayAdapter<String> arrayAdapter2;
 
         ArrayList<String> epScaleArrList = new ArrayList<>();
         epScaleArrList.add("Good (0-50)");
@@ -51,34 +47,12 @@ public class LearnEPAFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         CustomAdapter customAdapter = new CustomAdapter(getActivity(),epScaleArrList);
 
-
         recyclerView.setAdapter(customAdapter);
 
 
 
-
-        //arrayAdapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, epScaleArrList);
-
-
-
-       /* ListView listView = getActivity().findViewById(R.id.epaScaleLV);
-
-        ArrayList<String> epaScaleListValues = new ArrayList<>();
-
-        epaScaleListValues.add("Good (0-50)");
-        epaScaleListValues.add("Moderate (51-100)");
-        epaScaleListValues.add("Unhealthy for Sensitive Groups (101-150)");
-        epaScaleListValues.add("Unhealthy (151-200)");
-        epaScaleListValues.add("Very Unhealthy (201-300)");
-        epaScaleListValues.add("Dangerous (301-500)");
-
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getActivity(),android.R.layout.simple_list_item_1,epaScaleListValues);
-
-        listView.setAdapter(arrayAdapter);
-
-        Log.d("Count",String.valueOf(listView.getChildCount()));*/
-
         super.onViewCreated(view, savedInstanceState);
     }
+
 
 }

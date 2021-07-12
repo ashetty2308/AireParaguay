@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".GoodClass" />
+        <activity android:name=".ModerateClass" />
+        <activity android:name=".UnhSensClass" />
+        <activity android:name=".UnhClass" />
+        <activity android:name=".VUnhClass" />
+        <activity android:name=".DangerousClass" />
+
+
     </application>
 
 </manifest>
