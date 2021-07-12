@@ -10,3 +10,6 @@
 ## July 10th, 2021
 - Completed home page (introduction to what AireParaguay is and an introduction to the sensor process) 
 - Added hyperlinks 
+## July 11th, 2021
+- Added RecyclerView for the EPAScale section of the app 
+- Implemented correct RGB Color Values to match the EPA's
