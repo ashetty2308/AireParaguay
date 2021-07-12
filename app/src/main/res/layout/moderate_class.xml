@@ -10,6 +10,8 @@
         android:id="@+id/restOfPpl"
         android:layout_width="153dp"
         android:layout_height="35dp"
+        android:textColor="@color/black"
+
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,6 +24,8 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="0dp"
+        android:textColor="@color/black"
+
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Moderate (51-100)"
@@ -35,9 +39,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/questionWhoMod"
+        android:id="@+id/questionWhoUnhSens"
         android:layout_width="147dp"
         android:layout_height="59dp"
+        android:textColor="@color/black"
+
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,9 +54,11 @@
         app:layout_constraintVertical_bias="0.098" />
 
     <TextView
-        android:id="@+id/questionWhatMod"
+        android:id="@+id/questionWhatUnhSens"
         android:layout_width="147dp"
         android:layout_height="59dp"
+        android:textColor="@color/black"
+
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,9 +68,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.34" />
     <TextView
-        android:id="@+id/whoConernedAnsMod"
+        android:id="@+id/whoConernedAnsUnhSens"
         android:layout_width="182dp"
         android:layout_height="88dp"
+        android:textColor="@color/black"
+
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,10 +82,12 @@
         app:layout_constraintVertical_bias="0.104" />
 
     <TextView
-        android:id="@+id/excSensPpl"
+        android:id="@+id/sensGroupUnhSens"
         android:layout_width="153dp"
         android:layout_height="35dp"
         android:text="TextView"
+        android:textColor="@color/black"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +97,11 @@
         app:layout_constraintVertical_bias="0.314" />
 
     <TextView
-        android:id="@+id/excSensAction"
+        android:id="@+id/unhSensActionOrange"
         android:layout_width="166dp"
         android:layout_height="98dp"
+        android:textColor="@color/black"
+
         android:scrollbars="vertical"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,16 +116,18 @@
         android:layout_width="174dp"
         android:layout_height="101dp"
         android:scrollbars="vertical"
+        android:textColor="@color/black"
+
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.698" />
 
     <ImageView
-        android:id="@+id/emojiModerate"
+        android:id="@+id/emojiUnhSens"
         android:layout_width="221dp"
         android:layout_height="199dp"
         app:layout_constraintBottom_toBottomOf="parent"

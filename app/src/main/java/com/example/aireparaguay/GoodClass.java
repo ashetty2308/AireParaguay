@@ -23,8 +23,8 @@ public class GoodClass extends AppCompatActivity {
 
         getWindow().getDecorView().setBackgroundColor(Color.rgb(0,228,0));
 
-        questionWho = findViewById(R.id.questionWhoMod);
-        questionWhat = findViewById(R.id.questionWhatMod);
+        questionWho = findViewById(R.id.questionWhoUnhSens);
+        questionWhat = findViewById(R.id.questionWhatUnhSens);
         answerWho = findViewById(R.id.answerWho);
         answerWhat = findViewById(R.id.answerWhat);
         imageView = findViewById(R.id.emojiIV);

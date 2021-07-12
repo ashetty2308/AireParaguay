@@ -10,8 +10,9 @@
         android:id="@+id/answerWhat"
         android:layout_width="180dp"
         android:layout_height="59dp"
-        android:gravity="center"
         android:text="TextView"
+
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
@@ -23,6 +24,8 @@
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
         android:gravity="center"
         android:text="Good (0-50)"
         android:textSize="22dp"
@@ -35,8 +38,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/questionWhoMod"
+        android:id="@+id/questionWhoUnhSens"
         android:layout_width="147dp"
+        android:textColor="@color/black"
+
         android:layout_height="59dp"
         android:text="TextView"
         android:textStyle="bold"
@@ -48,9 +53,11 @@
         app:layout_constraintVertical_bias="0.098" />
 
     <TextView
-        android:id="@+id/questionWhatMod"
+        android:id="@+id/questionWhatUnhSens"
         android:layout_width="147dp"
         android:layout_height="59dp"
+        android:textColor="@color/black"
+
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,8 +71,8 @@
         android:id="@+id/answerWho"
         android:layout_width="180dp"
         android:layout_height="59dp"
-        android:gravity="center"
         android:text="TextView"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.835"

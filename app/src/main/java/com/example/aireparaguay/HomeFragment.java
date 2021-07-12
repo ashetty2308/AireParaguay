@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
 
         //add hyperlinks
         appDescription.setMovementMethod(new ScrollingMovementMethod());
-        appDescription.setText("This app shows the results of a sensor system with laser technology, created for the measurement of air quality in the country. The sensors measure the density of particles suspended in the air, with a diameter less than or equal to 2.5 micrometers, a measure known as PM 2.5, or in Spanish, particulate matter 2.5. The measurement values \u200B\u200Bare processed in real time and according to the \"NowCast\" regulation, of the US Environmental Protection Agency, to calculate the so-called Air Quality Index (US-AQI) and obtain a reference standard measurement. .\n" +
+        appDescription.setText("This app shows the results of a sensor system with laser technology, created for the measurement of air quality in the country. The sensors measure the density of particles suspended in the air, with a diameter less than or equal to 2.5 micrometers, a measure known as PM 2.5, or in Spanish, particulate matter 2.5. The measurement values \u200B\u200Bare processed in real time and according to the \"NowCast\" regulation, of the US Environmental Protection Agency, to calculate the so-called Air Quality Index (US-AQI) and obtain a reference standard measurement. \n" +
                 "\n" +
                 "The sensors are installed in various points of Asunción and nearby cities, measuring PM 2.5 values \u200B\u200Bat all times (24/7). The data is transmitted to the Internet and stored in a database in the cloud, from where it is consulted to be displayed on this web page. Unlike taking samples and measurement in the laboratory, real-time measurement allows citizens to know the quality of the air in their environment, and thus, take the necessary precautions, avoid excessive exposure and adapt their daily activities.\n" +
                 "\n" +
@@ -71,12 +71,6 @@ public class HomeFragment extends Fragment {
         twitter.setMovementMethod(LinkMovementMethod.getInstance());
         aireParaguayTwitter.setMovementMethod(LinkMovementMethod.getInstance());
         formTV.setMovementMethod(LinkMovementMethod.getInstance());
-
-
-
-
-
-
 
 
 

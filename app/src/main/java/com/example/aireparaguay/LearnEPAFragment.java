@@ -32,7 +32,6 @@ public class LearnEPAFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-
         RecyclerView recyclerView;
 
         ArrayList<String> epScaleArrList = new ArrayList<>();
@@ -48,8 +47,6 @@ public class LearnEPAFragment extends Fragment {
         CustomAdapter customAdapter = new CustomAdapter(getActivity(),epScaleArrList);
 
         recyclerView.setAdapter(customAdapter);
-
-
 
         super.onViewCreated(view, savedInstanceState);
     }
