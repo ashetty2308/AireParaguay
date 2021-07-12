@@ -13,3 +13,7 @@
 ## July 11th, 2021
 - Added RecyclerView for the EPAScale section of the app 
 - Implemented correct RGB Color Values to match the EPA's
+## July 12th, 2021
+- Created new intents for each item in the RecyclerView (EPA Scale RV) 
+- Added descriptions of who should be concerned, as well as plan of action for individuals
+- Adding emoji images to coordinate with the sensor data that I will be working on later
