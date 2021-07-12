@@ -16,4 +16,4 @@
 ## July 12th, 2021
 - Created new intents for each item in the RecyclerView (EPA Scale RV) 
 - Working on adding descriptions of who should be concerned, as well as plan of action
-- adding emoji images to coordinate with the sensor data that I will be working on later
+- Adding emoji images to coordinate with the sensor data that I will be working on later
