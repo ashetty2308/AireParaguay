@@ -1,12 +1,17 @@
 package com.example.aireparaguay;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,14 +32,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataFragment extends Fragment {
+
+    ListView dataLV;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
         return inflater.inflate(R.layout.data_fragment, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
+
+        dataLV = getActivity().findViewById(R.id.dataLV);
+
+
+
         new GetApiData().execute();
     }
 
@@ -89,7 +103,9 @@ public class DataFragment extends Fragment {
                     e.printStackTrace();
                 }
             }
+
             return null;
         }
     }
 }
+

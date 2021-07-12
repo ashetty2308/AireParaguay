@@ -43,7 +43,6 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
 
-
         appDescription = (TextView) getActivity().findViewById(R.id.tvDescription);
         airQualityAndHealth = (TextView) getActivity().findViewById(R.id.aqHealth);
         airPollution = (TextView) getActivity().findViewById(R.id.pollution);
@@ -73,7 +72,18 @@ public class HomeFragment extends Fragment {
         aireParaguayTwitter.setMovementMethod(LinkMovementMethod.getInstance());
         formTV.setMovementMethod(LinkMovementMethod.getInstance());
 
+
+
+
+
+
+
+
+
         super.onViewCreated(view, savedInstanceState);
 
+
+
     }
+
 }
