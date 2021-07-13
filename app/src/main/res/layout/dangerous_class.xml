@@ -22,10 +22,10 @@
     <TextView
         android:id="@+id/sensGroupsDang"
         android:layout_width="0dp"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Dangerous (301-500)"
+        android:text="Hazardous (301-500)"
+        android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

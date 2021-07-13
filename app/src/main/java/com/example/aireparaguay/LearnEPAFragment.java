@@ -40,7 +40,7 @@ public class LearnEPAFragment extends Fragment {
         epScaleArrList.add("Unhealthy for Sensitive Groups (101-150)");
         epScaleArrList.add("Unhealthy (151-200)");
         epScaleArrList.add("Very Unhealthy (201-300)");
-        epScaleArrList.add("Dangerous (301-500)");
+        epScaleArrList.add("Hazardous (301-500)");
 
         recyclerView = getActivity().findViewById(R.id.rvEPAScale);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
