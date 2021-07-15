@@ -21,4 +21,7 @@
 - Edited EPA Scale
 - Fixed Splash Screen
 - Looking into Custom ArrayAdapter integration for displaying sensor data 
+## July 15th, 2021 
+- Check in meeting 
+- Looked into changing language for the entire app through Android Studio itself 
 
