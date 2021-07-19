@@ -1,5 +1,6 @@
 package com.example.aireparaguay;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,6 +37,9 @@ import java.util.List;
 public class DataFragment extends Fragment {
 
     ListView dataLV;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -45,8 +51,6 @@ public class DataFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
 
-        dataLV = getActivity().findViewById(R.id.dataLV);
-
 
 
         new GetApiData().execute();
@@ -55,8 +59,21 @@ public class DataFragment extends Fragment {
     public class GetApiData extends AsyncTask<Void, Void, Void>{
 
         JSONArray apiData = new JSONArray();
+        ArrayList<String> regionNameList;
+        ArrayList<Integer> aqiValue;
+        ArrayList<ItemClass> list;
+
         @Override
         protected Void doInBackground(Void... voids) {
+
+            list = new ArrayList<>();
+
+            recyclerView = getActivity().findViewById(R.id.recyclerView);
+            recyclerView.setHasFixedSize(true);
+            layoutManager = new LinearLayoutManager(getActivity());
+            adapter = new ItemAdapter(list);
+            recyclerView.setLayoutManager(layoutManager);
+            recyclerView.setAdapter(adapter);
 
 
 
@@ -76,11 +93,11 @@ public class DataFragment extends Fragment {
             }
 
 
-            ArrayList<String> regionNameList = new ArrayList<>();
+             regionNameList = new ArrayList<>();
             ArrayList<String> sensorCodeList = new ArrayList<>();
 
 
-            ArrayList<Integer> aqiValue = new ArrayList<>();
+            aqiValue = new ArrayList<>();
             ArrayList<String> dateList = new ArrayList<>();
             ArrayList<String> colorList = new ArrayList<>();
             ArrayList<String> textList = new ArrayList<>();
@@ -106,6 +123,46 @@ public class DataFragment extends Fragment {
 
             return null;
         }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+
+
+            for(int i = 0; i < regionNameList.size(); i++){
+                Log.d("aqiValue", String.valueOf(aqiValue.get(i)));
+                int aqi = aqiValue.get(i);
+                String city = regionNameList.get(i);
+                if(aqi >= 0 && aqi <= 50){
+                    list.add(new ItemClass(R.drawable.sunglassemoji, regionNameList.get(i), String.valueOf(aqi)));
+                }
+                if(aqi >= 51 && aqi <= 100){
+                    list.add(new ItemClass(R.drawable.str8face, city, String.valueOf(aqi)));
+                }
+                if(aqi >= 101 && aqi <= 150){
+                    list.add(new ItemClass(R.drawable.sneezingemoji, city, String.valueOf(aqi)));
+                }
+                if(aqi >= 151 && aqi <= 200){
+                    list.add(new ItemClass(R.drawable.maskemoji, city, String.valueOf(aqi)));
+                }
+                if(aqi >= 201 && aqi <= 300){
+                    list.add(new ItemClass(R.drawable.maskemoji, city, String.valueOf(aqi)));
+                }
+                if(aqi >= 301 && aqi <= 500){
+                    list.add(new ItemClass(R.drawable.dangerousemoji, city, String.valueOf(aqi)));
+                }
+
+                recyclerView = getActivity().findViewById(R.id.recyclerView);
+                recyclerView.setHasFixedSize(true);
+                layoutManager = new LinearLayoutManager(getActivity());
+                adapter = new ItemAdapter(list);
+                recyclerView.setLayoutManager(layoutManager);
+                recyclerView.setAdapter(adapter);
+            }
+
+
+            super.onPostExecute(aVoid);
+        }
     }
+
 }
 
