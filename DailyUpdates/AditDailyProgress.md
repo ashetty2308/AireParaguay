@@ -24,4 +24,8 @@
 ## July 15th, 2021 
 - Check in meeting 
 - Looked into changing language for the entire app through Android Studio itself 
-
+## July 19th, 2021
+- Finished RecyclerView that contains sensor data 
+- Added background colors to match the sensors AQI value 
+- Scrolling compatability 
+<img src = "https://user-images.githubusercontent.com/77937577/126188834-45fac125-bbe9-4bb8-a15f-9dc5342a3b4e.png" width = "250" height = "500">
