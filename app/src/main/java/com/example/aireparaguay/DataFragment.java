@@ -132,6 +132,7 @@ public class DataFragment extends Fragment {
                 Log.d("aqiValue", String.valueOf(aqiValue.get(i)));
                 int aqi = aqiValue.get(i);
                 String city = regionNameList.get(i);
+
                 if(aqi >= 0 && aqi <= 50){
                     list.add(new ItemClass(R.drawable.sunglassemoji, regionNameList.get(i), String.valueOf(aqi)));
                 }

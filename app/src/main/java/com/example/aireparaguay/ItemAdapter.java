@@ -50,19 +50,19 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
             holder.imageView.setBackgroundColor(Color.GREEN);
         }
         if((Integer.valueOf(current.getAqiValue())>= 51) && (Integer.valueOf(current.getAqiValue())<=100)){
-            holder.imageView.setBackgroundColor(Color.parseColor("FFFF00"));
+            holder.imageView.setBackgroundColor(Color.rgb(255,255,0));
         }
         if((Integer.valueOf(current.getAqiValue())>= 101) && (Integer.valueOf(current.getAqiValue())<=150)){
-            holder.imageView.setBackgroundColor(Color.parseColor("FF7E00"));
+            holder.imageView.setBackgroundColor(Color.rgb(255,126,0));
         }
         if((Integer.valueOf(current.getAqiValue())>= 151) && (Integer.valueOf(current.getAqiValue())<=200)){
-            holder.imageView.setBackgroundColor(Color.parseColor("FF0000"));
+            holder.imageView.setBackgroundColor(Color.rgb(255,0,0));
         }
         if((Integer.valueOf(current.getAqiValue())>= 201) && (Integer.valueOf(current.getAqiValue())<=300)){
-            holder.imageView.setBackgroundColor(Color.parseColor("8F3F97"));
+            holder.imageView.setBackgroundColor(Color.rgb(143,63,151));
         }
         if((Integer.valueOf(current.getAqiValue())>= 301) && (Integer.valueOf(current.getAqiValue())<=500)){
-            holder.imageView.setBackgroundColor(Color.parseColor("7E0023"));
+            holder.imageView.setBackgroundColor(Color.rgb(126,0,35));
         }
 
         holder.imageView.setImageResource(current.getImageView());
