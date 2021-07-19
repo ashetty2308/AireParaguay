@@ -17,3 +17,11 @@
 - Created new intents for each item in the RecyclerView (EPA Scale RV) 
 - Added descriptions of who should be concerned, as well as plan of action for individuals
 - Adding emoji images to coordinate with the sensor data that I will be working on later
+## July 13th, 2021
+- Edited EPA Scale
+- Fixed Splash Screen
+- Looking into Custom ArrayAdapter integration for displaying sensor data 
+## July 15th, 2021 
+- Check in meeting 
+- Looked into changing language for the entire app through Android Studio itself 
+
