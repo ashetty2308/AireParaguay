@@ -29,3 +29,9 @@
 - Added background colors to match the sensors AQI value 
 - Scrolling compatability 
 <img src = "https://user-images.githubusercontent.com/77937577/126188834-45fac125-bbe9-4bb8-a15f-9dc5342a3b4e.png" width = "250" height = "500">
+
+## July 21, 2020
+- Read more documentation on maps and markers (looking specifically into the development of custom markers for the sensor data on the map) 
+- Links
+  - https://developers.google.com/maps/documentation/android-sdk/start
+  - https://developers.google.com/maps/documentation/android-sdk/map-with-marker
