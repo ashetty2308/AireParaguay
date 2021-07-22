@@ -38,3 +38,8 @@
 ## July 22, 2020
 - Added basic map to the app 
 - Added marker (tested with capital of Paraguay) 
+  - Update: added markers for all sensors, however, done non-progmatically. 
+    - Tried to do it progmatically, but was getting a null value for each of the API elments where I created the new marker
+    - Will look into doing it progmatically for increased efficiency/better practice (will also help if future sensors are added)
+  - Markers display region name when clicked on (looking into possibly adding the AQI value 
+<img src = "https://user-images.githubusercontent.com/77937577/126712341-f4534f75-39ec-492f-a97f-5ae451edf574.png" width = "250" height = "500">
