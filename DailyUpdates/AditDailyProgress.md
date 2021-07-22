@@ -35,3 +35,6 @@
 - Links
   - https://developers.google.com/maps/documentation/android-sdk/start
   - https://developers.google.com/maps/documentation/android-sdk/map-with-marker
+## July 22, 2020
+- Added basic map to the app 
+- Added marker (tested with capital of Paraguay) 
