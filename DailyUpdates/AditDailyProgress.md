@@ -43,3 +43,9 @@
     - Will look into doing it progmatically for increased efficiency/better practice (will also help if future sensors are added)
   - Markers display region name when clicked on (looking into possibly adding the AQI value 
 <img src = "https://user-images.githubusercontent.com/77937577/126712341-f4534f75-39ec-492f-a97f-5ae451edf574.png" width = "250" height = "500">
+
+## July 23, 2020
+- Changed marker code so it was done through programmatically instead of manually entering region names and coordinates 
+  - Will help when future sensors are added (no need to go back and add anything to code; it will work with the API to add it manually) 
+- Looked into changing color of the markers (this works)
+- Researched into color changes of markers, and continuing to look around custom marker development 
