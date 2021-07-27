@@ -82,6 +82,7 @@ public class CustomAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
         if(position==0){
             holder.itemView.setBackgroundColor(Color.rgb(0,228,0));
+
          //   Intent x = new Intent(this, GoodClass.class);
            // c.startActivity(x);
         }

@@ -90,7 +90,7 @@ public class DataFragment extends Fragment {
             }
 
 
-             regionNameList = new ArrayList<>();
+            regionNameList = new ArrayList<>();
             ArrayList<String> sensorCodeList = new ArrayList<>();
 
 
@@ -124,9 +124,8 @@ public class DataFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
 
-
             for(int i = 0; i < regionNameList.size(); i++){
-                Log.d("aqiValue", String.valueOf(aqiValue.get(i)));
+
                 int aqi = aqiValue.get(i);
                 String city = regionNameList.get(i);
 
@@ -163,4 +162,3 @@ public class DataFragment extends Fragment {
     }
 
 }
-
