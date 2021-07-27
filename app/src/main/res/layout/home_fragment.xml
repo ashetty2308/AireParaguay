@@ -53,7 +53,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Home"
+        android:text="More Information"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"

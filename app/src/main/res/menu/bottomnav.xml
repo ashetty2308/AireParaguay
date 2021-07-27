@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
     <item
-        android:id="@+id/home_tab"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
-    <item
-        android:id="@+id/learn_epa_tab"
-        android:icon="@drawable/ic_baseline_school_24"
-        android:title="EPA Scale" />
-    
+        android:id="@+id/map_tab"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="Map" />
+
+
     <item
         android:id="@+id/data_tab"
         android:icon="@drawable/ic_baseline_table_rows_24"
         android:title="Latest Data" />
 
     <item
-        android:id="@+id/map_tab"
-        android:icon="@drawable/ic_baseline_map_24"
-        android:title="Map" />
+        android:id="@+id/learn_epa_tab"
+        android:icon="@drawable/ic_baseline_school_24"
+        android:title="EPA Scale" />
+
+
+    <item
+        android:id="@+id/home_tab"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="More Info" />
+
 </menu>

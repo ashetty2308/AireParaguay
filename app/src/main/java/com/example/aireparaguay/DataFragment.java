@@ -50,9 +50,6 @@ public class DataFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-
-
-
         new GetApiData().execute();
     }
 

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bNav = findViewById(R.id.bottomnav);
         bNav.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MapFragment()).commit();
 
 
     }
@@ -41,17 +41,17 @@ public class MainActivity extends AppCompatActivity {
             Fragment chosen = null;
 
             switch(item.getItemId()){
-                case R.id.home_tab:
-                    chosen = new HomeFragment();
-                    break;
-                case R.id.learn_epa_tab:
-                    chosen = new LearnEPAFragment();
+                case R.id.map_tab:
+                    chosen = new MapFragment();
                     break;
                 case R.id.data_tab:
                     chosen = new DataFragment();
                     break;
-                case R.id.map_tab:
-                    chosen = new MapFragment();
+                case R.id.learn_epa_tab:
+                    chosen = new LearnEPAFragment();
+                    break;
+                case R.id.home_tab:
+                    chosen = new HomeFragment();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,chosen).commit();

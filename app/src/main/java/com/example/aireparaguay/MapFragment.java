@@ -1,5 +1,6 @@
 package com.example.aireparaguay;
 
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,7 +19,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -41,6 +44,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     ArrayList<String> regionList;
     ArrayList<Double> latList;
     ArrayList<Double> longList;
+    ArrayList<Integer> aqiList;
 
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -68,6 +72,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             regionList = new ArrayList<>();
             latList = new ArrayList<>();
             longList = new ArrayList<>();
+            aqiList = new ArrayList<>();
 
             try {
                 URL url = new URL("https://aireparaguay.org/nodos_app");
@@ -90,6 +95,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                     regionList.add(apiData.getJSONObject(i).getString("region"));
                     latList.add(apiData.getJSONObject(i).getJSONObject("ubicacion").getDouble("lat"));
                     longList.add(apiData.getJSONObject(i).getJSONObject("ubicacion").getDouble("lng"));
+                    aqiList.add(apiData.getJSONObject(i).getJSONObject("aqi_now").getInt("value"));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -100,10 +106,36 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         @Override
         protected void onPostExecute(Void aVoid) {
             LatLng latLng;
+            String title;
+            int aqiVal;
             for(int i = 0; i < regionList.size(); i++){
+                aqiVal = aqiList.get(i);
                 latLng = new LatLng(latList.get(i), longList.get(i));
-                map.addMarker(new MarkerOptions().position(latLng).title(regionList.get(i)));
-                map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                title = regionList.get(i)+" - AQI: "+aqiList.get(i);
+                if(aqiVal >= 0 && aqiVal <= 50){
+                    map.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)).title(title));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                }
+                else if(aqiVal >= 51 && aqiVal <= 100){
+                    map.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)).title(title));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                }
+                else if(aqiVal >= 101 && aqiVal <= 150){
+                    map.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)).title(title));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                }
+                else if(aqiVal >= 151 && aqiVal <= 200){
+                    map.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)).title(title));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                }
+                else if(aqiVal >= 201 && aqiVal <= 300){
+                    map.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA)).title(title));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                }
+                else{
+                    map.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.defaultMarker(343)).title(title));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
+                }
             }
         }
     }
