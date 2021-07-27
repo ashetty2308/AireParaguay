@@ -49,3 +49,12 @@
   - Will help when future sensors are added (no need to go back and add anything to code; it will work with the API to add it manually) 
 - Looked into changing color of the markers (this works)
 - Researched into color changes of markers, and continuing to look around custom marker development 
+## July 27, 2020
+- Check-in meeting 
+  - Rearrange Icons: Map, Data, Scale, More Info 
+  - Custom Markers 
+  - More Color for Sensor Data
+  - Make chart more user friendly/appealing (Spanish + English) 
+  - Research publication process
+- Rearranged Icons
+- Added outline for Data Table to make it more clear and impactful  
