@@ -58,3 +58,8 @@
   - Research publication process
 - Rearranged Icons
 - Added outline for Data Table to make it more clear and impactful  
+## July 28th, 2020 
+- Looked further into the language barrier issue 
+- Was able to get some basic changes from Spanish to English 
+  - If user system is in Spanish, a few texts will be changed to the Spanish version (only for a few so far, but basic testing is occuring at the moment)
+  - Should be able to have a solution for both Spanish and English compatabilities with more time (should be good before beta release) 
