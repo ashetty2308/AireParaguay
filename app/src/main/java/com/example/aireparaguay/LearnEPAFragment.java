@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -33,7 +34,6 @@ public class LearnEPAFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         RecyclerView recyclerView;
-
         ArrayList<String> epScaleArrList = new ArrayList<>();
         epScaleArrList.add("Good (0-50)");
         epScaleArrList.add("Moderate (51-100)");

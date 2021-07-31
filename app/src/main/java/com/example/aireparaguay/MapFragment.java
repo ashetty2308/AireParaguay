@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONArray;
@@ -108,6 +110,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             LatLng latLng;
             String title;
             int aqiVal;
+
             for(int i = 0; i < regionList.size(); i++){
                 aqiVal = aqiList.get(i);
                 latLng = new LatLng(latList.get(i), longList.get(i));
@@ -137,6 +140,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11f));
                 }
             }
+            final LatLng melbourneLocation = new LatLng(-37.813, 144.962);
+
         }
     }
 }

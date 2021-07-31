@@ -5,23 +5,23 @@
     <item
         android:id="@+id/map_tab"
         android:icon="@drawable/ic_baseline_map_24"
-        android:title="Map" />
+        android:title="@string/bottomnavmap" />
 
 
     <item
         android:id="@+id/data_tab"
         android:icon="@drawable/ic_baseline_table_rows_24"
-        android:title="Latest Data" />
+        android:title="@string/bottomnavdata" />
 
     <item
         android:id="@+id/learn_epa_tab"
         android:icon="@drawable/ic_baseline_school_24"
-        android:title="EPA Scale" />
+        android:title="@string/bottomnavepascale" />
 
 
     <item
         android:id="@+id/home_tab"
         android:icon="@drawable/ic_baseline_read_more_24"
-        android:title="More Info" />
+        android:title="@string/bottomnavmoreinformation" />
 
 </menu>
