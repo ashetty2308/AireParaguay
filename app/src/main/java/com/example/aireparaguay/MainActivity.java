@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.home_tab:
                     chosen = new HomeFragment();
                     break;
+                case R.id.about_me_tab:
+                    chosen = new AboutMeFragment();
+                    break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,chosen).commit();
             return true;

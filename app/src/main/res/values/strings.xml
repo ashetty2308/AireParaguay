@@ -12,7 +12,7 @@
     <string name="bottomnavmap">Map</string>
     <string name="bottomnavdata">Latest Data</string>
     <string name="bottomnavepascale">EPA Scale</string>
-    <string name="bottomnavmoreinformation">More Information</string>
+    <string name="bottomnavmoreinformation">Learn More</string>
 
     <string name="epagood">Good</string>
     <string name="epaMod">Moderate</string>
@@ -40,6 +40,8 @@
     <string name="hyperlinkthreefortranslation">Twitter</string>
     <string name="hyperlinkfourfortranslation">AireParaguay Twitter</string>
     <string name="hyperlinkfivefortranslation">Form</string>
+
+    <string name="bottomnavaboutme">About Me</string>
 
 
 </resources>

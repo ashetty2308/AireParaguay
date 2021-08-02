@@ -24,4 +24,13 @@
         android:icon="@drawable/ic_baseline_read_more_24"
         android:title="@string/bottomnavmoreinformation" />
 
+    <item
+        android:id="@+id/about_me_tab"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/bottomnavaboutme" />
+
+
+
+
+
 </menu>
