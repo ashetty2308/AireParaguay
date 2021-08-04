@@ -21,6 +21,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class LearnEPAFragment extends Fragment {
+    private RecyclerView recyclerViewEPA;
+    private RecyclerView.Adapter adapterEPA;
+    private RecyclerView.LayoutManager layoutManagerEPA;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -33,23 +36,26 @@ public class LearnEPAFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        RecyclerView recyclerView;
-        ArrayList<String> epScaleArrList = new ArrayList<>();
-        epScaleArrList.add("Good (0-50)");
-        epScaleArrList.add("Moderate (51-100)");
-        epScaleArrList.add("Unhealthy for Sensitive Groups (101-150)");
-        epScaleArrList.add("Unhealthy (151-200)");
-        epScaleArrList.add("Very Unhealthy (201-300)");
-        epScaleArrList.add("Hazardous (301-500)");
 
-        recyclerView = getActivity().findViewById(R.id.rvEPAScale);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        CustomAdapter customAdapter = new CustomAdapter(getActivity(),epScaleArrList);
+        ArrayList<EPAitemClass> epScaleArrList = new ArrayList<>();
 
-        recyclerView.setAdapter(customAdapter);
+        epScaleArrList.add(new EPAitemClass(R.drawable.sunglassemoji, "Good (0-50)", "Nobody!"));
+        epScaleArrList.add(new EPAitemClass(R.drawable.str8face, "Moderate (51-100)", "People who may be exceptionally sensitive to particulate contamination."));
+        epScaleArrList.add(new EPAitemClass(R.drawable.sneezingemoji, "Unhealthy For Sensitive Groups (101-150)", "Sensitive groups include people with heart or lung disease, older adults, children, and adolescents."));
+        epScaleArrList.add(new EPAitemClass(R.drawable.maskemoji, "Unhealthy (151-200)", "All."));
+        epScaleArrList.add(new EPAitemClass(R.drawable.maskemoji, "Very Unhealthy (201-300)", "All."));
+        epScaleArrList.add(new EPAitemClass(R.drawable.dangerousemoji, "Hazardous (301-500)", "All."));
+
+
+        recyclerViewEPA = getActivity().findViewById(R.id.rvEPAScale);
+        recyclerViewEPA.setHasFixedSize(true);
+        layoutManagerEPA = new LinearLayoutManager(getActivity());
+        adapterEPA = new EPAAdapter(epScaleArrList);
+
+
+        recyclerViewEPA.setLayoutManager(layoutManagerEPA);
+        recyclerViewEPA.setAdapter(adapterEPA);
 
         super.onViewCreated(view, savedInstanceState);
     }
-
-
 }
