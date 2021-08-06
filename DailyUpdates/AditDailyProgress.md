@@ -67,3 +67,14 @@
 - Created About Me Page 
 - Worked with basic tables for EPA chart 
 - Looked into stages of releasing app for beta 
+## August 4th, 2021
+- Finished EPA Scale 
+- Had issues with tables (wanted to use tables, but besides having issues with it, I wanted to include the emoji visualization so the users can clearly see values) 
+- Need to wrap up Spanish compatabilities for entire app (done with most, just need to add more for remaining text) 
+<img src = "https://user-images.githubusercontent.com/77937577/128262385-010df6c2-26c5-43e8-8467-001ef20a5ebe.png" width = "250" height = "500">
+<img src = "https://user-images.githubusercontent.com/77937577/128262386-6b5de50f-a8f8-44a5-9fa3-9a51adcc770a.png" width = "250" height = "500">
+
+## August 5th, 2021 
+- Finished translations
+- App done
+- Next step: releasing and getting user feedback! 
