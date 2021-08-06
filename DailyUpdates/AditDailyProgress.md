@@ -78,3 +78,7 @@
 - Finished translations
 - App done
 - Next step: releasing and getting user feedback! 
+## August 6th, 2021
+- Meeting check in 
+- Added EPA scale correlation to the data tables (i.e.; if AQI is 38, it says AQI: 38 - Bueno) 
+- Will look into app deployment steps 
