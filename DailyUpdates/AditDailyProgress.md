@@ -73,3 +73,7 @@
 - Need to wrap up Spanish compatabilities for entire app (done with most, just need to add more for remaining text) 
 <img src = "https://user-images.githubusercontent.com/77937577/128262385-010df6c2-26c5-43e8-8467-001ef20a5ebe.png" width = "250" height = "500">
 <img src = "https://user-images.githubusercontent.com/77937577/128262386-6b5de50f-a8f8-44a5-9fa3-9a51adcc770a.png" width = "250" height = "500">
+## August 5th, 2021 
+- Finished translations
+- App done
+- Next step: releasing and getting user feedback! 
