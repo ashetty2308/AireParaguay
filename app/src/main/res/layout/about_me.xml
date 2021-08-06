@@ -8,11 +8,11 @@
     android:background="@drawable/minimalwallpaperforhome">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/aboutmebanner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="About Me"
+        android:text="@string/bottomnavaboutme"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126"
+        app:layout_constraintVertical_bias="0.213"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -38,11 +38,11 @@
         android:layout_width="233dp"
         android:layout_height="127dp"
         android:scrollbars="vertical"
-        android:text="TextView"
+        android:text="@string/aboutmetext"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715" />
+        app:layout_constraintVertical_bias="0.794" />
 </androidx.constraintlayout.widget.ConstraintLayout>

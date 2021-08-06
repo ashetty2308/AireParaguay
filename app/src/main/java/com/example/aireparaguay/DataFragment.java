@@ -36,7 +36,6 @@ import java.util.List;
 
 public class DataFragment extends Fragment {
 
-    ListView dataLV;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -155,7 +154,6 @@ public class DataFragment extends Fragment {
                 recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setAdapter(adapter);
             }
-
 
             super.onPostExecute(aVoid);
         }

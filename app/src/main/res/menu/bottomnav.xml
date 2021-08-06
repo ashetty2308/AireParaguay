@@ -2,16 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item
-        android:id="@+id/map_tab"
-        android:icon="@drawable/ic_baseline_map_24"
-        android:title="@string/bottomnavmap" />
-
 
     <item
         android:id="@+id/data_tab"
         android:icon="@drawable/ic_baseline_table_rows_24"
         android:title="@string/bottomnavdata" />
+
+    <item
+        android:id="@+id/map_tab"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/bottomnavmap" />
+
 
     <item
         android:id="@+id/learn_epa_tab"

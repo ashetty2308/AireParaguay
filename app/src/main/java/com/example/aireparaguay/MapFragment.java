@@ -111,6 +111,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             String title;
             int aqiVal;
 
+
+
+
+
             for(int i = 0; i < regionList.size(); i++){
                 aqiVal = aqiList.get(i);
                 latLng = new LatLng(latList.get(i), longList.get(i));

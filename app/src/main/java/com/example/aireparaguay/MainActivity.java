@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bNav = findViewById(R.id.bottomnav);
         bNav.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MapFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DataFragment()).commit();
 
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
