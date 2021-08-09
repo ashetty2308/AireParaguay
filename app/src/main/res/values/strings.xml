@@ -7,7 +7,7 @@
     <string name="hyperlink3">Twitter: <a href="https://twitter.com/">Twitter</a></string>
     <string name="hyperlink4">AireParaguay Twitter: <a href="https://twitter.com/aireparaguay">Our Twitter</a></string>
     <string name="hyperlink5">Form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSemZSWO9EgKam1lUqG5bvIpzOn5pPj9OXx02SeDfD9dBYO1qA/viewform">Form</a></string>
-
+    <string name="linkedinhyperlink">LinkedIn: <a href="https://www.linkedin.com/in/adit-shetty-51245b208/">LinkedIn</a></string>
 
     <string name="bottomnavmap">Map</string>
     <string name="bottomnavdata">Latest Data</string>
@@ -37,6 +37,5 @@
     <string name="concernsModerate">People who may be exceptionally sensitive to particulate contamination.</string>
     <string name="concernsNobody">Concerns: Nobody!</string>
     <string name="aboutmetext">Hi! My name is Adit Shetty, and I am a senior at South Brunswick High School, New Jersey, USA. I am an aspiring computer scientist, but I am also interested in pursuing a CS career integrated with environmental connections. Just as this app helps raise awareness of air quality within Paraguay, I would like to continue my journey on helping people and our planet. Whether it be working more with air quality, urban development (smart cities), climate change, satellites, and much more, I am so excited to begin working with computer science to truly benefit out world. Please reach out at aditshettyAP@gmail.com!</string>
-
 
 </resources>

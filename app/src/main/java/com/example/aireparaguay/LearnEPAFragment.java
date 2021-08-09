@@ -51,7 +51,7 @@ public class LearnEPAFragment extends Fragment {
             epScaleArrList.add(new EPAitemClass(R.drawable.str8face, "Moderado (51-100)", "Preocupaciones: Personas que podrían ser excepcionalmente sensibles a la contaminación por partículas."));
             epScaleArrList.add(new EPAitemClass(R.drawable.sneezingemoji, "Insalubre p/ grupos sensibles (101-150)", "Preocupaciones: Los grupos sensibles comprenden a personas con cardiopatías o enfermedades pulmonares, adultos mayores, niños y adolescentes."));
             epScaleArrList.add(new EPAitemClass(R.drawable.maskemoji, "Insalubre (151-200)", "Preocupaciones: Todos."));
-            epScaleArrList.add(new EPAitemClass(R.drawable.maskemoji, "Muy  Insalubre (201-300)", "Preocupaciones: Todos."));
+            epScaleArrList.add(new EPAitemClass(R.drawable.maskemoji, "Muy Insalubre (201-300)", "Preocupaciones: Todos."));
             epScaleArrList.add(new EPAitemClass(R.drawable.dangerousemoji, "Peligroso (301-500)", "Preocupaciones: Todos."));
         }
 

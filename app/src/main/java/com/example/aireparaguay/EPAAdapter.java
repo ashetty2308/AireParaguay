@@ -19,7 +19,6 @@ import java.util.Locale;
 
 public class EPAAdapter extends RecyclerView.Adapter<EPAAdapter.EPAViewHolder> {
     private ArrayList<EPAitemClass> epaScaleList;
-    Locale locale;
 
     @NonNull
     @Override
@@ -27,7 +26,6 @@ public class EPAAdapter extends RecyclerView.Adapter<EPAAdapter.EPAViewHolder> {
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.scale_item, parent, false);
         EPAViewHolder epaViewHolder = new EPAViewHolder(v);
-        locale = Locale.getDefault();
         return epaViewHolder;
     }
 
@@ -36,13 +34,6 @@ public class EPAAdapter extends RecyclerView.Adapter<EPAAdapter.EPAViewHolder> {
     public void onBindViewHolder(@NonNull EPAViewHolder holder, int position) {
         EPAitemClass item = epaScaleList.get(position);
         holder.epaIV.setImageResource(item.getImageViewEPA());
-
-
-
-
-
-  //      holder.epaTVLabel.setText("API Index: "+item.getEpaLabel());
-    //    holder.epaTVConcern.setText("Concerns: "+item.getEpaConcern());
 
         holder.epaTVLabel.setText(""+item.getEpaLabel());
         holder.epaTVConcern.setText(""+item.getEpaConcern());
@@ -81,10 +72,6 @@ public class EPAAdapter extends RecyclerView.Adapter<EPAAdapter.EPAViewHolder> {
             holder.epaIV.setBackgroundColor(Color.rgb(126,0,35));
 
         }
-
-
-
-
     }
 
     @Override

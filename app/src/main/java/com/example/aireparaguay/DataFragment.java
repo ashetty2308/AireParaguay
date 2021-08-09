@@ -32,6 +32,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class DataFragment extends Fragment {
@@ -58,6 +59,7 @@ public class DataFragment extends Fragment {
         ArrayList<String> regionNameList;
         ArrayList<Integer> aqiValue;
         ArrayList<ItemClass> list;
+
 
         @Override
         protected Void doInBackground(Void... voids) {
@@ -100,6 +102,8 @@ public class DataFragment extends Fragment {
 
             ArrayList<Double> latCoorList = new ArrayList<>();
             ArrayList<Double> lngCoorList = new ArrayList<>();
+            ArrayList<String> dateTimeList = new ArrayList<>();
+
 
             for(int i = 0; i < apiData.length(); i++){
                 try {
@@ -111,12 +115,14 @@ public class DataFragment extends Fragment {
                     textList.add(apiData.getJSONObject(i).getJSONObject("aqi_now").getString("text"));
                     latCoorList.add(apiData.getJSONObject(i).getJSONObject("ubicacion").getDouble("lat"));
                     lngCoorList.add(apiData.getJSONObject(i).getJSONObject("ubicacion").getDouble("lng"));
+                    dateTimeList.add(apiData.getJSONObject(i).getJSONObject("aqi_now").getString("date"));
 
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
 
+          
             return null;
         }
 
