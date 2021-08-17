@@ -15,6 +15,8 @@ I would also like to thank the countless tutorials I used online, including thos
 
 Once again, thank you so much to Dr. Kerekes and Mr. Pallarolas for giving me this outstanding opportunity!
 
+App on Play Store: [Click here](https://play.google.com/store/apps/details?id=aditshetty.com.aireparaguay)
+
 Links:
 
 - [AireParaguay Webpage](https://aireparaguay.org/)
