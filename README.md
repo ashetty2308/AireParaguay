@@ -11,7 +11,7 @@ The data analysis of the sensor data is a bit complicated, so if you would like 
 
 I'm the app developer for the Android interface of aireparaguay.org. It was a super fun experience to not just develop this Android app, but to learn more about sensors and enviromental awareness and sustainability. I am also super happy to have made it easier for Paraguay residents to get information about air quality. 
 
-I would also like to thank the countless tutorials I used online, including those from Coding in Flow, Coding with Mitch, Philipp Lackner, and other tutorials and Stack Overflow threads to help me throughout this project.
+I would also like to thank the helpful tutorials online, including those from Coding in Flow, Coding with Mitch, Philipp Lackner, and other tutorials and Stack Overflow threads to help me throughout this project.
 
 Once again, thank you so much to Dr. Kerekes and Mr. Pallarolas for giving me this outstanding opportunity!
 
