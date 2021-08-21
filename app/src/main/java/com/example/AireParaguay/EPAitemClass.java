@@ -1,4 +1,4 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 public class EPAitemClass {
     private int imageViewEPA;

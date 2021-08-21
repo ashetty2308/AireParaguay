@@ -1,4 +1,4 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -7,8 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import org.w3c.dom.Text;
 
 public class UnhSensClass extends AppCompatActivity {
     TextView questionWhatUnhSens;

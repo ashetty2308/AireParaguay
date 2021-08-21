@@ -1,8 +1,7 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 import android.graphics.Color;
 import android.os.Build;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +29,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         public ImageView imageView;
         public TextView cityAndDate;
         public TextView aqiValue;
+        public TextView dateTime;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -37,6 +37,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
             cityAndDate = itemView.findViewById(R.id.epaValueTV);
             aqiValue = itemView.findViewById(R.id.epaConcernTV);
             materialCardView = itemView.findViewById(R.id.materialcardview);
+            dateTime = itemView.findViewById(R.id.timeTVSensorItem);
         }
     }
 
@@ -91,10 +92,15 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
         holder.imageView.setImageResource(current.getImageView());
         holder.cityAndDate.setText(current.getCityAndDate());
-
         holder.aqiValue.setText("AQI: " + current.getAqiValue());
-
         String userLocale = Locale.getDefault().getLanguage();
+
+        if(userLocale.equalsIgnoreCase("en")) {
+            holder.dateTime.setText("Time: " + current.getDateTime());
+        }
+        else{
+            holder.dateTime.setText("Tiempo: "+ current.getDateTime());
+        }
 
 
         if(userLocale.equalsIgnoreCase("en")) {

@@ -1,9 +1,8 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.method.MovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;

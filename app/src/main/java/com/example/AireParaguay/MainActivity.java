@@ -1,4 +1,4 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -7,18 +7,15 @@ import androidx.fragment.app.Fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Locale;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 

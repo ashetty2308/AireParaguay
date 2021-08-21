@@ -1,8 +1,7 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class EPAAdapter extends RecyclerView.Adapter<EPAAdapter.EPAViewHolder> {
     private ArrayList<EPAitemClass> epaScaleList;

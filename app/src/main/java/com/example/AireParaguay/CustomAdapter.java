@@ -1,4 +1,4 @@
-package com.example.aireparaguay;
+package com.example.AireParaguay;
 
 import android.content.Context;
 import android.content.Intent;

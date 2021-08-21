@@ -13,10 +13,11 @@
             android:layout_margin="4dp"
             android:background="@android:color/white">
 
+
             <ImageView
                 android:id="@+id/emojiForAdapter"
                 android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_height="64dp"
                 android:padding="2dp" />
 
             <TextView
@@ -24,29 +25,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="14dp"
-                android:layout_marginLeft="14dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
                 android:layout_marginTop="1dp"
                 android:layout_toEndOf="@+id/emojiForAdapter"
                 android:layout_toRightOf="@+id/emojiForAdapter"
                 android:text="Line 1"
                 android:textColor="@android:color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeTVSensorItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="26dp"
+                android:layout_toEndOf="@id/emojiForAdapter"
+                android:layout_toRightOf="@id/emojiForAdapter"
+                android:text="Time: "
+                android:textSize="11sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/epaConcernTV"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/epaValueTV"
-                android:layout_marginStart="14dp"
-                android:layout_marginLeft="14dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="25dp"
                 android:layout_toEndOf="@+id/emojiForAdapter"
                 android:layout_toRightOf="@+id/emojiForAdapter"
                 android:text="API: "
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:textStyle="bold" />
+
         </RelativeLayout>
 
 </com.google.android.material.card.MaterialCardView>
