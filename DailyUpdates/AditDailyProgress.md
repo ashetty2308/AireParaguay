@@ -82,3 +82,20 @@
 - Meeting check in 
 - Added EPA scale correlation to the data tables (i.e.; if AQI is 38, it says AQI: 38 - Bueno or AQI: 38 - Good) 
 - Will look into app deployment steps 
+
+
+## Past 2 Weeks
+- Hi, it's been a while since I've done any commits/pushes to this repo
+- Most of my time was working on releasing the app to the Play Store
+  - Worked with keys 
+  - Worked on getting the correct Android App Bundle (AAB) --> this was new starting in August 2021, so it was a bit difficult at first 
+- Attended meetings 
+- Did internal testing with Guilermo was the tester
+  - App was working fine 
+- Deployed to production
+  - App finally launched! 
+- RIT Summer Intern Presentation August 20th, 2021
+  - Super fun to learn about what other interns worked on, and super honored to present about Aire Paraguay!
+- Over 100 installations as of August 21st, 2021
+- Waiting for user feedback to learn & grow
+- Now looking into push notifications & custom markers 
