@@ -99,3 +99,9 @@
 - Over 100 installations as of August 21st, 2021
 - Waiting for user feedback to learn & grow
 - Now looking into push notifications & custom markers 
+
+
+## Past 3 Weeks 
+
+- Taken some time off. Will be reconvening this Friday to discuss updates that need to be made for the app
+- ~235 installations so far!
