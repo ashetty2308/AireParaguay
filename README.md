@@ -4,8 +4,6 @@
 
 Unfortunately, the Aire Paraguay Android application will no longer to work. Due to copyright infringments upon Aire Paraguay itself, the owner has decided to make AQI data private. The app will not function due to the API data not being able to be processed, but here lies the source code that was used to build and launch the code during the summer of 2021. 
 
-The Twitter is also disabled, but the website has a bit of functionality and features. 
-
 Apologies for the inconvenice, but I hope you can use our work to gain inspiration towards a new wave that ties our environment and computing closer together.
 
 Best wishes,
